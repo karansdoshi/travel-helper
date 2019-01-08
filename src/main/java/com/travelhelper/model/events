@@ -1,0 +1,79 @@
+package com.travelhelper.model;
+
+import javax.xml.bind.annotation.XmlRootElement;
+@XmlRootElement
+public class events {
+    private String name;
+    private String location;
+    private String type;
+    private int duration;
+    private string start_date;
+    private int charges;
+    private int id;
+
+    public events(int id,String name, String location, String type, int duration, string start_date, int charges) {
+        this.name = name;
+        this.location = location;
+        this.type = type;
+        this.duration = duration;
+        this.start_date = start_date;
+        this.charges = charges;
+        this.id=id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
+    public string getStart_date() {
+        return start_date;
+    }
+
+    public void setStart_date(string start_date) {
+        this.start_date = start_date;
+    }
+
+    public int getCharges() {
+        return charges;
+    }
+
+    public void setCharges(int charges) {
+        this.charges = charges;
+    }
+}
