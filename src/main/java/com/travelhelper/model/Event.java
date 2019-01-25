@@ -1,22 +1,24 @@
 package com.travelhelper.model;
-
+import com.travelhelper.repositories.Type;
 import javax.xml.bind.annotation.XmlRootElement;
+
 @XmlRootElement
-public class events {
+public class Event implements Type{
+
     private String name;
     private String location;
-    private String type;
     private int duration;
-    private string start_date;
+    private String startDate;
     private int charges;
     private int id;
+    public Type.Events type; 
 
-    public events(int id,String name, String location, String type, int duration, string start_date, int charges) {
+    public Event(int id, String name, String location, Type.Events type, int duration, String startDate, int charges) {
         this.name = name;
         this.location = location;
         this.type = type;
         this.duration = duration;
-        this.start_date = start_date;
+        this.startDate = startDate;
         this.charges = charges;
         this.id=id;
     }
@@ -45,11 +47,11 @@ public class events {
         this.location = location;
     }
 
-    public String getType() {
+    public Type.Events getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(Type.Events type) {
         this.type = type;
     }
 
@@ -61,12 +63,12 @@ public class events {
         this.duration = duration;
     }
 
-    public string getStart_date() {
-        return start_date;
+    public String getStartDate() {
+        return startDate;
     }
 
-    public void setStart_date(string start_date) {
-        this.start_date = start_date;
+    public void setStartDate(String startDate) {
+        this.startDate = startDate;
     }
 
     public int getCharges() {

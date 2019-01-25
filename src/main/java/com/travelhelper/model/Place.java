@@ -7,13 +7,13 @@ public class Place {
     private int id;
     private String name;
     private int distance;
-    private String weather_type;
+    private String weatherType;
 
-    public Place(int id, String name, int distance, String weather_type) {
+    public Place(int id, String name, int distance, String weatherType) {
         this.id = id;
         this.name = name;
         this.distance = distance;
-        this.weather_type = weather_type;
+        this.weatherType = weatherType;
     }
 
     public int getId() {
@@ -40,12 +40,12 @@ public class Place {
         this.distance = distance;
     }
 
-    public String getWeather_type() {
-        return weather_type;
+    public String getWeatherType() {
+        return weatherType;
     }
 
-    public void setWeather_type(String weather_type) {
-        this.weather_type = weather_type;
+    public void setWeatherType(String weatherType) {
+        this.weatherType = weatherType;
     }
 
 
